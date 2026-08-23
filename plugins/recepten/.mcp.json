@@ -2,8 +2,7 @@
   "mcpServers": {
     "recepten": {
       "type": "http",
-      "url": "https://recepten.roanensven.nl/mcp",
-      "bearer_token_env_var": "RECEPTEN_MCP_TOKEN"
+      "url": "https://recepten.roanensven.nl/mcp"
     }
   }
 }

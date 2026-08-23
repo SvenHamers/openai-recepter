@@ -17,7 +17,11 @@ Gebruik uitsluitend deze negen Recepten MCP-tools voor handelingen in het recept
 - `add_tag`
 - `remove_tag`
 
-Gebruik geen andere tool, browser, bestandstoegang of directe databaseactie om receptgegevens te lezen of te wijzigen. De server staat op `https://recepten.roanensven.nl/mcp` en verwacht een Bearer-token uit de lokale omgevingsvariabele `RECEPTEN_MCP_TOKEN`. Als authenticatie ontbreekt of mislukt, leg dan uit dat de gebruiker het token privé bij de beheerder moet aanvragen, de variabele lokaal moet instellen en de ChatGPT-desktopapp of Codex daarna volledig moet herstarten. Vraag nooit om het token in de chat, toon het niet en schrijf het niet naar bestanden. Als de server niet bereikbaar is, meld dat zonder resultaten te verzinnen of naar een andere bron uit te wijken.
+Gebruik geen andere tool, browser, bestandstoegang of directe databaseactie om receptgegevens te lezen of te wijzigen. De server staat op `https://recepten.roanensven.nl/mcp` en gebruikt OAuth 2.1 met persoonlijke Recepten-accounts. Laat de normale koppel- of inloginterface van ChatGPT/Codex de OAuth-flow uitvoeren; vraag nooit om een wachtwoord, toegangscode of token in de chat en schrijf zulke gegevens niet naar bestanden.
+
+Als authenticatie nodig is, vraag de gebruiker de Recepten-verbinding te koppelen en in te loggen met het account dat door de beheerder is aangemaakt. Bij een verlopen of ingetrokken sessie laat je de gebruiker opnieuw koppelen. Leg bij onvoldoende rechten uit of `recipes:read` dan wel `recipes:write` ontbreekt en adviseer opnieuw koppelen of contact opnemen met de beheerder. Als het account niet is toegestaan, leg uit dat de beheerder toegang moet verlenen. Als de server niet bereikbaar is, meld dat zonder resultaten te verzinnen of naar een andere bron uit te wijken.
+
+Alle negen tools vereisen OAuth. De vijf leesacties gebruiken `recipes:read`; `create_recipe`, `update_recipe`, `add_tag` en `remove_tag` gebruiken `recipes:write`. Vertrouw op de scopes en gebruikersidentiteit die de MCP-server valideert en probeer authenticatie nooit te omzeilen met een gedeeld of handmatig Bearer-token.
 
 ## Kies de juiste tool
 
