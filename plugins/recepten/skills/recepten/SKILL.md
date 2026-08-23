@@ -1,6 +1,6 @@
 ---
 name: recepten
-description: Zoek, lees, kies, maak en wijzig recepten in het persoonlijke gedigitaliseerde receptenarchief via de lokale Recepten MCP-server. Gebruik voor natuurlijke receptzoekvragen, koken met aanwezige ingrediënten, sectieoverzichten, willekeurige recepten, receptdetails, recepten uit tekst of foto, receptcorrecties en tags.
+description: Zoek, lees, kies, maak en wijzig recepten in het persoonlijke gedigitaliseerde receptenarchief via de beveiligde Recepten MCP-server. Gebruik voor natuurlijke receptzoekvragen, koken met aanwezige ingrediënten, sectieoverzichten, willekeurige recepten, receptdetails, recepten uit tekst of foto, receptcorrecties en tags.
 ---
 
 # Recepten
@@ -17,7 +17,7 @@ Gebruik uitsluitend deze negen Recepten MCP-tools voor handelingen in het recept
 - `add_tag`
 - `remove_tag`
 
-Gebruik geen andere tool, browser, bestandstoegang of directe databaseactie om receptgegevens te lezen of te wijzigen. Als de MCP-server niet bereikbaar is, leg uit dat de lokale receptenserver op `http://127.0.0.1:3210/mcp` moet draaien; verzin geen resultaten en wijk niet uit naar een andere bron.
+Gebruik geen andere tool, browser, bestandstoegang of directe databaseactie om receptgegevens te lezen of te wijzigen. De server staat op `https://recepten.roanensven.nl/mcp` en verwacht een Bearer-token uit de lokale omgevingsvariabele `RECEPTEN_MCP_TOKEN`. Als authenticatie ontbreekt of mislukt, leg dan uit dat de gebruiker het token privé bij de beheerder moet aanvragen, de variabele lokaal moet instellen en de ChatGPT-desktopapp of Codex daarna volledig moet herstarten. Vraag nooit om het token in de chat, toon het niet en schrijf het niet naar bestanden. Als de server niet bereikbaar is, meld dat zonder resultaten te verzinnen of naar een andere bron uit te wijken.
 
 ## Kies de juiste tool
 

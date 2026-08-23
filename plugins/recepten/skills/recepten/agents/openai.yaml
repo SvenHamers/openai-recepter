@@ -7,9 +7,9 @@ dependencies:
   tools:
     - type: "mcp"
       value: "recepten"
-      description: "Lokale MCP-server voor het gedigitaliseerde receptenarchief"
+      description: "Beveiligde MCP-server voor het gedigitaliseerde receptenarchief"
       transport: "streamable_http"
-      url: "http://127.0.0.1:3210/mcp"
+      url: "https://recepten.roanensven.nl/mcp"
 
 policy:
   allow_implicit_invocation: true

@@ -1,7 +1,7 @@
 {
   "name": "recepten",
-  "version": "0.1.0",
-  "description": "Zoek, lees en beheer het lokale gedigitaliseerde receptenarchief.",
+  "version": "0.1.1",
+  "description": "Zoek, lees en beheer het beveiligde gedigitaliseerde receptenarchief.",
   "author": {
     "name": "Sven Hamers",
     "url": "https://github.com/SvenHamers"
@@ -18,7 +18,7 @@
   "interface": {
     "displayName": "Recepten",
     "shortDescription": "Je persoonlijke gedigitaliseerde receptenarchief.",
-    "longDescription": "Zoek recepten, ontdek wat je met aanwezige ingredi\u00ebnten kunt koken, lees details en voeg recepten uit tekst of foto toe via de lokale Recepten MCP-server.",
+    "longDescription": "Zoek recepten, ontdek wat je met aanwezige ingredi\u00ebnten kunt koken, lees details en voeg recepten uit tekst of foto toe via de beveiligde Recepten MCP-server.",
     "developerName": "Sven Hamers",
     "category": "Productivity",
     "capabilities": [
