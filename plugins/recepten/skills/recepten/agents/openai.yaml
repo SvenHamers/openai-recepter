@@ -1,0 +1,15 @@
+interface:
+  display_name: "Recepten"
+  short_description: "Zoek, lees en beheer je receptenarchief"
+  default_prompt: "Gebruik $recepten om een passend recept te vinden."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "recepten"
+      description: "Lokale MCP-server voor het gedigitaliseerde receptenarchief"
+      transport: "streamable_http"
+      url: "http://127.0.0.1:3210/mcp"
+
+policy:
+  allow_implicit_invocation: true

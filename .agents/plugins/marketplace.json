@@ -1,0 +1,20 @@
+{
+  "name": "openai-recepter",
+  "interface": {
+    "displayName": "OpenAI Recepten"
+  },
+  "plugins": [
+    {
+      "name": "recepten",
+      "source": {
+        "source": "local",
+        "path": "./plugins/recepten"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
