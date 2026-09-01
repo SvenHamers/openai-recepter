@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "second-brain": {
+      "type": "http",
+      "url": "https://mcp.roanensven.nl/mcp"
+    }
+  }
+}

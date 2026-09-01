@@ -1,6 +1,9 @@
-# OpenAI Recepten
+# OpenAI Recepten en Second Brain
 
-Plugin voor het persoonlijke, gedigitaliseerde receptenarchief. De plugin bevat de `recepten`-skill en verbindt met de met OAuth 2.1 beveiligde MCP-server op `https://recepten.roanensven.nl/mcp`.
+Persoonlijke Git-marketplace met twee plugins:
+
+- **Recepten** voor het persoonlijke, gedigitaliseerde receptenarchief via `https://recepten.roanensven.nl/mcp`.
+- **Second Brain** voor persoonlijk geheugen, geselecteerde Home Assistant-bronnen, bevestigde tv/media-acties en cameraweergave via `https://mcp.roanensven.nl/mcp`.
 
 ## Installeren vanuit GitHub
 
@@ -10,7 +13,9 @@ Voeg deze repository als marketplace toe:
 codex plugin marketplace add SvenHamers/openai-recepter --ref main
 ```
 
-Herstart daarna de ChatGPT-desktopapp, open **Plugins**, kies **OpenAI Recepten** en installeer **Recepten** met de plusknop. Kies **Verbinden** wanneer daarom wordt gevraagd en log in met je persoonlijke Recepten-account. Start na installatie een nieuwe taak.
+Herstart daarna de ChatGPT-desktopapp, open **Plugins**, kies **OpenAI Recepten** en installeer **Recepten** of **Second Brain** met de plusknop. Kies **Verbinden** wanneer daarom wordt gevraagd en rond de beveiligde accountkoppeling af. Start na installatie een nieuwe taak.
+
+Voor Second Brain kun je daarna `brain_setup` gebruiken om Home Assistant privé te koppelen en expliciet camera's, bronnen en vaste acties te selecteren.
 
 ## Account koppelen
 
@@ -27,4 +32,4 @@ Als de sessie is verlopen, het account is uitgeschakeld of een scope ontbreekt, 
 
 ## Beveiligingsmodel
 
-Iedereen kan de publieke plugin installeren, maar alleen een geldig, toegestaan Recepten-account krijgt toegang. De server gebruikt OAuth 2.1 Authorization Code met PKCE en afzonderlijke lees- en schrijfrechten. Inloggegevens staan niet in deze repository.
+Iedereen kan de publieke plugins installeren, maar alleen een geldig, toegestaan account krijgt toegang. De servers gebruiken OAuth 2.1 Authorization Code met PKCE. Inloggegevens staan niet in deze repository. Dit geldt ook voor Home Assistant-tokens, Second Brain-pairing keys, OAuth-sessies en persoonlijke Second Brain-data.

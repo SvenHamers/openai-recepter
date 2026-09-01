@@ -1,0 +1,38 @@
+{
+  "name": "second-brain",
+  "version": "0.1.0",
+  "description": "Gebruik je persoonlijke geheugen en geselecteerde Home Assistant-apparaten via de beveiligde Second Brain MCP-server.",
+  "author": {
+    "name": "Sven Hamers",
+    "url": "https://github.com/SvenHamers"
+  },
+  "homepage": "https://github.com/SvenHamers/openai-recepter",
+  "repository": "https://github.com/SvenHamers/openai-recepter",
+  "keywords": [
+    "second-brain",
+    "home-assistant",
+    "mcp",
+    "memory",
+    "camera"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Second Brain",
+    "shortDescription": "Geheugen, Home Assistant en camera's in chat.",
+    "longDescription": "Koppel je persoonlijke Second Brain-account voor doorzoekbaar geheugen, geselecteerde agenda- en takenbronnen, bevestigde tv- en media-acties en cameraweergave via MCP Apps.",
+    "developerName": "Sven Hamers",
+    "category": "Productivity",
+    "capabilities": [
+      "Search",
+      "Read",
+      "Write",
+      "Interactive"
+    ],
+    "defaultPrompt": [
+      "Zoek dit op in mijn Second Brain.",
+      "Zet de tv in de woonkamer aan.",
+      "Laat de livestream van mijn camera zien."
+    ]
+  },
+  "mcpServers": "./.mcp.json"
+}
