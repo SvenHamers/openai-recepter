@@ -1,6 +1,6 @@
 {
   "name": "second-brain",
-  "version": "0.1.0",
+  "version": "0.2.0+codex.20260901085132",
   "description": "Gebruik je persoonlijke geheugen en geselecteerde Home Assistant-apparaten via de beveiligde Second Brain MCP-server.",
   "author": {
     "name": "Sven Hamers",
@@ -18,8 +18,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Second Brain",
-    "shortDescription": "Geheugen, Home Assistant en camera's in chat.",
-    "longDescription": "Koppel je persoonlijke Second Brain-account voor doorzoekbaar geheugen, geselecteerde agenda- en takenbronnen, bevestigde tv- en media-acties en cameraweergave via MCP Apps.",
+    "shortDescription": "Geheugen, Home Assistant, tv-remote en camera's.",
+    "longDescription": "Koppel je persoonlijke Second Brain-account voor doorzoekbaar geheugen, geselecteerde agenda- en takenbronnen, bevestigde tv- en media-acties, een interactieve afstandsbediening en cameraweergave via MCP Apps.",
     "developerName": "Sven Hamers",
     "category": "Productivity",
     "capabilities": [
@@ -31,6 +31,7 @@
     "defaultPrompt": [
       "Zoek dit op in mijn Second Brain.",
       "Zet de tv in de woonkamer aan.",
+      "Geef me de afstandsbediening van de woonkamer-tv.",
       "Laat de livestream van mijn camera zien."
     ]
   },
